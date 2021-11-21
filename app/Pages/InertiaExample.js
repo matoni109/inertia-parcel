@@ -9,7 +9,7 @@ const InertiaExample = ({ name }) => (
       <h1 className="text-lg">
         <a className="no-underline hover:underline text-black" href="#"></a>
       </h1>
-      <p className="text-grey-darker text-sm">11/1/19</p>
+      <p className="text-grey-darker text-sm">11/1/2022</p>
     </header>
   </>
 );

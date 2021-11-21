@@ -944,7 +944,6 @@ $parcel$ReactRefreshHelpers$b3e2.prelude(module);
 
 try {
 var _jsxRuntime = require("react/jsx-runtime");
-// Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
 var _reactDom = require("react-dom");
 var _inertiaReact = require("@inertiajs/inertia-react");
 var _ = require(".././Pages/*");
@@ -956,7 +955,7 @@ _inertiaReact.createInertiaApp({
             ...props,
             __source: {
                 fileName: "app/javascript/application.js",
-                lineNumber: 11,
+                lineNumber: 9,
                 columnNumber: 12
             },
             __self: this
@@ -28443,7 +28442,7 @@ const InertiaExample = ({ name  })=>/*#__PURE__*/ _jsxRuntime.jsxs(_jsxRuntime.F
                             columnNumber: 7
                         },
                         __self: undefined,
-                        children: "11/1/19"
+                        children: "11/1/2022"
                     })
                 ]
             })

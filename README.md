@@ -3,7 +3,7 @@
 
   
 
-## Working example of Shopify Plaris React Components.
+## Working example of Shopify Polaris React Components.
 ![image](https://user-images.githubusercontent.com/68096885/142751116-d9fab545-6b14-4185-a82e-073e92765c56.png)
 
 #### [Rails 7 Alpha 2](https://weblog.rubyonrails.org/2021/9/27/this-week-in-rails-autumn-is-here-and-so-is-rails-7-alpha-2/)

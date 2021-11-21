@@ -28442,7 +28442,7 @@ const InertiaExample = ({ name  })=>/*#__PURE__*/ _jsxRuntime.jsxs(_jsxRuntime.F
                             columnNumber: 7
                         },
                         __self: undefined,
-                        children: "11/1/2022"
+                        children: "11/1/2023"
                     })
                 ]
             })

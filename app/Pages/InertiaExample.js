@@ -1,17 +1,51 @@
-import React from "react";
+import React, { useState, useCallback } from "react";
+import CheckboxExample from "../javascript/Components/Checkbox";
+import enTranslations from "@shopify/polaris/locales/en.json";
+import {
+  AppProvider,
+  Frame,
+  Toast,
+  List,
+  Page,
+  Card,
+  Button,
+  SkeletonThumbnail,
+} from "@shopify/polaris";
+import { useState } from "react";
 
-// import MyToggle from "~/Components/MyToggle";
+const InertiaExample = () => {
+  const [active, setActive] = useState(false);
 
-const InertiaExample = ({ name }) => (
-  <>
-    <h1>Hello {name}!</h1>
-    <header className="flex items-center justify-between leading-tight p-2 md:p-4">
-      <h1 className="text-lg">
-        <a className="no-underline hover:underline text-black" href="#"></a>
-      </h1>
-      <p className="text-grey-darker text-sm">11/1/2023</p>
-    </header>
-  </>
-);
+  const toggleActive = useCallback(() => setActive((active) => !active), []);
+
+  const toastMarkup = active ? (
+    <Toast content="Message sent" onDismiss={toggleActive} />
+  ) : null;
+
+  return (
+    <AppProvider i18n={enTranslations}>
+      <Page title="Polaris Components in React">
+        <Card sectioned>
+          <Button onClick={() => alert("Button clicked!")}>
+            Example button
+          </Button>
+
+          <CheckboxExample />
+        </Card>
+
+        <Card sectioned>
+          <div style={{ height: "250px" }}>
+            <Frame>
+              <Page title="Toast example">
+                <Button onClick={toggleActive}>Show Toast</Button>
+                {toastMarkup}
+              </Page>
+            </Frame>
+          </div>
+        </Card>
+      </Page>
+    </AppProvider>
+  );
+};
 InertiaExample.layout = null;
 export default InertiaExample;

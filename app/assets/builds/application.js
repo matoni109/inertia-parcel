@@ -28394,46 +28394,155 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _enJson = require("@shopify/polaris/locales/en.json");
 var _enJsonDefault = parcelHelpers.interopDefault(_enJson);
 var _polaris = require("@shopify/polaris");
-// import MyToggle from "~/Components/MyToggle";
-const InertiaExample = ()=>/*#__PURE__*/ _jsxRuntime.jsx(_polaris.AppProvider, {
+var _s = $RefreshSig$();
+const InertiaExample = ()=>{
+    _s();
+    const [active1, setActive] = _react.useState(false);
+    const toggleActive = _react.useCallback(()=>setActive((active)=>!active
+        )
+    , []);
+    const toastMarkup = active1 ? /*#__PURE__*/ _jsxRuntime.jsx(_polaris.Toast, {
+        content: "Message sent",
+        onDismiss: toggleActive,
+        __source: {
+            fileName: "app/Pages/InertiaExample.js",
+            lineNumber: 22,
+            columnNumber: 5
+        },
+        __self: undefined
+    }) : null;
+    return(/*#__PURE__*/ _jsxRuntime.jsx(_polaris.AppProvider, {
         i18n: _enJsonDefault.default,
         __source: {
             fileName: "app/Pages/InertiaExample.js",
-            lineNumber: 7,
-            columnNumber: 3
+            lineNumber: 26,
+            columnNumber: 5
         },
         __self: undefined,
-        children: /*#__PURE__*/ _jsxRuntime.jsx(_polaris.Page, {
-            title: "Example app",
+        children: /*#__PURE__*/ _jsxRuntime.jsxs(_polaris.Page, {
+            title: "I'm Polaris Components in React",
             __source: {
                 fileName: "app/Pages/InertiaExample.js",
-                lineNumber: 8,
-                columnNumber: 5
+                lineNumber: 27,
+                columnNumber: 7
             },
             __self: undefined,
-            children: /*#__PURE__*/ _jsxRuntime.jsx(_polaris.Card, {
-                sectioned: true,
-                __source: {
-                    fileName: "app/Pages/InertiaExample.js",
-                    lineNumber: 9,
-                    columnNumber: 7
-                },
-                __self: undefined,
-                children: /*#__PURE__*/ _jsxRuntime.jsx(_polaris.Button, {
-                    onClick: ()=>alert("Button clicked!")
-                    ,
+            children: [
+                /*#__PURE__*/ _jsxRuntime.jsxs(_polaris.Card, {
+                    sectioned: true,
                     __source: {
                         fileName: "app/Pages/InertiaExample.js",
-                        lineNumber: 10,
+                        lineNumber: 28,
                         columnNumber: 9
                     },
                     __self: undefined,
-                    children: "Example button"
+                    children: [
+                        /*#__PURE__*/ _jsxRuntime.jsx(_polaris.Button, {
+                            onClick: ()=>alert("Button clicked!")
+                            ,
+                            __source: {
+                                fileName: "app/Pages/InertiaExample.js",
+                                lineNumber: 29,
+                                columnNumber: 11
+                            },
+                            __self: undefined,
+                            children: "Example button"
+                        }),
+                        /*#__PURE__*/ _jsxRuntime.jsxs(_polaris.List, {
+                            type: "bullet",
+                            __source: {
+                                fileName: "app/Pages/InertiaExample.js",
+                                lineNumber: 33,
+                                columnNumber: 11
+                            },
+                            __self: undefined,
+                            children: [
+                                /*#__PURE__*/ _jsxRuntime.jsx(_polaris.List.Item, {
+                                    __source: {
+                                        fileName: "app/Pages/InertiaExample.js",
+                                        lineNumber: 34,
+                                        columnNumber: 13
+                                    },
+                                    __self: undefined,
+                                    children: "Yellow shirt"
+                                }),
+                                /*#__PURE__*/ _jsxRuntime.jsx(_polaris.List.Item, {
+                                    __source: {
+                                        fileName: "app/Pages/InertiaExample.js",
+                                        lineNumber: 35,
+                                        columnNumber: 13
+                                    },
+                                    __self: undefined,
+                                    children: "Red shirt"
+                                }),
+                                /*#__PURE__*/ _jsxRuntime.jsx(_polaris.List.Item, {
+                                    __source: {
+                                        fileName: "app/Pages/InertiaExample.js",
+                                        lineNumber: 36,
+                                        columnNumber: 13
+                                    },
+                                    __self: undefined,
+                                    children: "Green shirt"
+                                })
+                            ]
+                        })
+                    ]
+                }),
+                /*#__PURE__*/ _jsxRuntime.jsx(_polaris.Card, {
+                    sectioned: true,
+                    __source: {
+                        fileName: "app/Pages/InertiaExample.js",
+                        lineNumber: 40,
+                        columnNumber: 9
+                    },
+                    __self: undefined,
+                    children: /*#__PURE__*/ _jsxRuntime.jsx("div", {
+                        style: {
+                            height: "250px"
+                        },
+                        __source: {
+                            fileName: "app/Pages/InertiaExample.js",
+                            lineNumber: 41,
+                            columnNumber: 11
+                        },
+                        __self: undefined,
+                        children: /*#__PURE__*/ _jsxRuntime.jsx(_polaris.Frame, {
+                            __source: {
+                                fileName: "app/Pages/InertiaExample.js",
+                                lineNumber: 42,
+                                columnNumber: 13
+                            },
+                            __self: undefined,
+                            children: /*#__PURE__*/ _jsxRuntime.jsxs(_polaris.Page, {
+                                title: "Toast example",
+                                __source: {
+                                    fileName: "app/Pages/InertiaExample.js",
+                                    lineNumber: 43,
+                                    columnNumber: 15
+                                },
+                                __self: undefined,
+                                children: [
+                                    /*#__PURE__*/ _jsxRuntime.jsx(_polaris.Button, {
+                                        onClick: toggleActive,
+                                        __source: {
+                                            fileName: "app/Pages/InertiaExample.js",
+                                            lineNumber: 44,
+                                            columnNumber: 17
+                                        },
+                                        __self: undefined,
+                                        children: "Show Toast"
+                                    }),
+                                    toastMarkup
+                                ]
+                            })
+                        })
+                    })
                 })
-            })
+            ]
         })
-    })
-;
+    }));
+};
+_s(InertiaExample, "n+IdQcDbqBF+6QIUmaxgzi+NhZ0=");
 _c = InertiaExample;
 InertiaExample.layout = null;
 exports.default = InertiaExample;
@@ -28445,7 +28554,7 @@ $RefreshReg$(_c, "InertiaExample");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-runtime":"bWSzr","react":"6fep5","@parcel/transformer-js/src/esmodule-helpers.js":"8FsVl","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7Hnvg","@shopify/polaris/locales/en.json":"2HzVe","@shopify/polaris":"kRkat"}],"8FsVl":[function(require,module,exports) {
+},{"react/jsx-runtime":"bWSzr","react":"6fep5","@parcel/transformer-js/src/esmodule-helpers.js":"8FsVl","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"7Hnvg","@shopify/polaris":"kRkat","@shopify/polaris/locales/en.json":"2HzVe"}],"8FsVl":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -28474,9 +28583,6 @@ exports.export = function(dest, destName, get) {
         get: get
     });
 };
-
-},{}],"2HzVe":[function(require,module,exports) {
-module.exports = JSON.parse("{\"Polaris\":{\"Actions\":{\"moreActions\":\"More actions\"},\"Avatar\":{\"label\":\"Avatar\",\"labelWithInitials\":\"Avatar with initials {initials}\"},\"Autocomplete\":{\"spinnerAccessibilityLabel\":\"Loading\",\"ellipsis\":\"{content}…\"},\"Badge\":{\"PROGRESS_LABELS\":{\"incomplete\":\"Incomplete\",\"partiallyComplete\":\"Partially complete\",\"complete\":\"Complete\"},\"STATUS_LABELS\":{\"info\":\"Info\",\"success\":\"Success\",\"warning\":\"Warning\",\"critical\":\"Critical\",\"attention\":\"Attention\",\"new\":\"New\"},\"progressAndStatus\":\"{statusLabel} {progressLabel}\"},\"Button\":{\"spinnerAccessibilityLabel\":\"Loading\",\"connectedDisclosureAccessibilityLabel\":\"Related actions\"},\"Common\":{\"checkbox\":\"checkbox\",\"undo\":\"Undo\",\"cancel\":\"Cancel\",\"newWindowAccessibilityHint\":\"(opens a new window)\",\"clear\":\"Clear\",\"close\":\"Close\",\"submit\":\"Submit\",\"more\":\"More\"},\"ContextualSaveBar\":{\"save\":\"Save\",\"discard\":\"Discard\"},\"DataTable\":{\"sortAccessibilityLabel\":\"sort {direction} by\",\"navAccessibilityLabel\":\"Scroll table {direction} one column\",\"totalsRowHeading\":\"Totals\",\"totalRowHeading\":\"Total\"},\"DatePicker\":{\"previousMonth\":\"Show previous month, {previousMonthName} {showPreviousYear}\",\"nextMonth\":\"Show next month, {nextMonth} {nextYear}\",\"today\":\"Today \",\"start\":\"Start of range\",\"end\":\"End of range\",\"months\":{\"january\":\"January\",\"february\":\"February\",\"march\":\"March\",\"april\":\"April\",\"may\":\"May\",\"june\":\"June\",\"july\":\"July\",\"august\":\"August\",\"september\":\"September\",\"october\":\"October\",\"november\":\"November\",\"december\":\"December\"},\"days\":{\"monday\":\"Monday\",\"tuesday\":\"Tuesday\",\"wednesday\":\"Wednesday\",\"thursday\":\"Thursday\",\"friday\":\"Friday\",\"saturday\":\"Saturday\",\"sunday\":\"Sunday\"},\"daysAbbreviated\":{\"monday\":\"Mo\",\"tuesday\":\"Tu\",\"wednesday\":\"We\",\"thursday\":\"Th\",\"friday\":\"Fr\",\"saturday\":\"Sa\",\"sunday\":\"Su\"}},\"DiscardConfirmationModal\":{\"title\":\"Discard all unsaved changes\",\"message\":\"If you discard changes, you’ll delete any edits you made since you last saved.\",\"primaryAction\":\"Discard changes\",\"secondaryAction\":\"Continue editing\"},\"DropZone\":{\"single\":{\"overlayTextFile\":\"Drop file to upload\",\"overlayTextImage\":\"Drop image to upload\",\"actionTitleFile\":\"Add file\",\"actionTitleImage\":\"Add image\",\"actionHintFile\":\"or drop file to upload\",\"actionHintImage\":\"or drop image to upload\",\"labelFile\":\"Upload file\",\"labelImage\":\"Upload image\"},\"allowMultiple\":{\"overlayTextFile\":\"Drop files to upload\",\"overlayTextImage\":\"Drop images to upload\",\"actionTitleFile\":\"Add files\",\"actionTitleImage\":\"Add images\",\"actionHintFile\":\"or drop files to upload\",\"actionHintImage\":\"or drop images to upload\",\"labelFile\":\"Upload files\",\"labelImage\":\"Upload images\"},\"errorOverlayTextFile\":\"File type is not valid\",\"errorOverlayTextImage\":\"Image type is not valid\"},\"EmptySearchResult\":{\"altText\":\"Empty search results\"},\"Frame\":{\"skipToContent\":\"Skip to content\",\"navigationLabel\":\"Navigation\",\"Navigation\":{\"closeMobileNavigationLabel\":\"Close navigation\"}},\"ActionMenu\":{\"RollupActions\":{\"rollupButton\":\"Actions\"}},\"Filters\":{\"moreFilters\":\"More filters\",\"moreFiltersWithCount\":\"More filters ({count})\",\"filter\":\"Filter {resourceName}\",\"noFiltersApplied\":\"No filters applied\",\"cancel\":\"Cancel\",\"done\":\"Done\",\"clearAllFilters\":\"Clear all filters\",\"clear\":\"Clear\",\"clearLabel\":\"Clear {filterName}\"},\"IndexProvider\":{\"defaultItemSingular\":\"Item\",\"defaultItemPlural\":\"Items\",\"allItemsSelected\":\"All {itemsLength}+ {resourceNamePlural} are selected.\",\"selected\":\"{selectedItemsCount} selected\",\"a11yCheckboxDeselectAllSingle\":\"Deselect {resourceNameSingular}\",\"a11yCheckboxSelectAllSingle\":\"Select {resourceNameSingular}\",\"a11yCheckboxDeselectAllMultiple\":\"Deselect all {itemsLength} {resourceNamePlural}\",\"a11yCheckboxSelectAllMultiple\":\"Select all {itemsLength} {resourceNamePlural}\"},\"IndexTable\":{\"emptySearchTitle\":\"No {resourceNamePlural} found\",\"emptySearchDescription\":\"Try changing the filters or search term\",\"onboardingBadgeText\":\"New\",\"resourceLoadingAccessibilityLabel\":\"Loading {resourceNamePlural}…\",\"selectAllLabel\":\"Select all {resourceNamePlural}\",\"selected\":\"{selectedItemsCount} selected\",\"undo\":\"Undo\",\"selectAllItems\":\"Select all {itemsLength}+ {resourceNamePlural}\",\"selectItem\":\"Select {resourceName}\",\"selectButtonText\":\"Select\"},\"Loading\":{\"label\":\"Page loading bar\"},\"Modal\":{\"iFrameTitle\":\"body markup\",\"modalWarning\":\"These required properties are missing from Modal: {missingProps}\"},\"Pagination\":{\"previous\":\"Previous\",\"next\":\"Next\",\"pagination\":\"Pagination\"},\"ProgressBar\":{\"negativeWarningMessage\":\"Values passed to the progress prop shouldn’t be negative. Resetting {progress} to 0.\",\"exceedWarningMessage\":\"Values passed to the progress prop shouldn’t exceed 100. Setting {progress} to 100.\"},\"ResourceList\":{\"sortingLabel\":\"Sort by\",\"defaultItemSingular\":\"item\",\"defaultItemPlural\":\"items\",\"showing\":\"Showing {itemsCount} {resource}\",\"showingTotalCount\":\"Showing {itemsCount} of {totalItemsCount} {resource}\",\"loading\":\"Loading {resource}\",\"selected\":\"{selectedItemsCount} selected\",\"allItemsSelected\":\"All {itemsLength}+ {resourceNamePlural} in your store are selected.\",\"allFilteredItemsSelected\":\"All {itemsLength}+ {resourceNamePlural} in this filter are selected.\",\"selectAllItems\":\"Select all {itemsLength}+ {resourceNamePlural} in your store\",\"selectAllFilteredItems\":\"Select all {itemsLength}+ {resourceNamePlural} in this filter\",\"emptySearchResultTitle\":\"No {resourceNamePlural} found\",\"emptySearchResultDescription\":\"Try changing the filters or search term\",\"selectButtonText\":\"Select\",\"a11yCheckboxDeselectAllSingle\":\"Deselect {resourceNameSingular}\",\"a11yCheckboxSelectAllSingle\":\"Select {resourceNameSingular}\",\"a11yCheckboxDeselectAllMultiple\":\"Deselect all {itemsLength} {resourceNamePlural}\",\"a11yCheckboxSelectAllMultiple\":\"Select all {itemsLength} {resourceNamePlural}\",\"ariaLiveSingular\":\"{itemsLength} item\",\"ariaLivePlural\":\"{itemsLength} items\",\"Item\":{\"actionsDropdownLabel\":\"Actions for {accessibilityLabel}\",\"actionsDropdown\":\"Actions dropdown\",\"viewItem\":\"View details for {itemName}\"},\"BulkActions\":{\"actionsActivatorLabel\":\"Actions\",\"moreActionsActivatorLabel\":\"More actions\",\"warningMessage\":\"To provide a better user experience. There should only be a maximum of {maxPromotedActions} promoted actions.\"},\"FilterCreator\":{\"filterButtonLabel\":\"Filter\",\"selectFilterKeyPlaceholder\":\"Select a filter…\",\"addFilterButtonLabel\":\"Add filter\",\"showAllWhere\":\"Show all {resourceNamePlural} where:\"},\"FilterControl\":{\"textFieldLabel\":\"Search {resourceNamePlural}\"},\"FilterValueSelector\":{\"selectFilterValuePlaceholder\":\"Select a filter…\"},\"DateSelector\":{\"dateFilterLabel\":\"Select a value\",\"dateValueLabel\":\"Date\",\"dateValueError\":\"Match YYYY-MM-DD format\",\"dateValuePlaceholder\":\"YYYY-MM-DD\",\"SelectOptions\":{\"PastWeek\":\"in the last week\",\"PastMonth\":\"in the last month\",\"PastQuarter\":\"in the last 3 months\",\"PastYear\":\"in the last year\",\"ComingWeek\":\"next week\",\"ComingMonth\":\"next month\",\"ComingQuarter\":\"in the next 3 months\",\"ComingYear\":\"in the next year\",\"OnOrBefore\":\"on or before\",\"OnOrAfter\":\"on or after\"},\"FilterLabelForValue\":{\"past_week\":\"in the last week\",\"past_month\":\"in the last month\",\"past_quarter\":\"in the last 3 months\",\"past_year\":\"in the last year\",\"coming_week\":\"next week\",\"coming_month\":\"next month\",\"coming_quarter\":\"in the next 3 months\",\"coming_year\":\"in the next year\",\"on_or_before\":\"before {date}\",\"on_or_after\":\"after {date}\"}}},\"SkeletonPage\":{\"loadingLabel\":\"Page loading\"},\"Tabs\":{\"toggleTabsLabel\":\"More tabs\"},\"Tag\":{\"ariaLabel\":\"Remove {children}\"},\"TextField\":{\"characterCount\":\"{count} characters\",\"characterCountWithMaxLength\":\"{count} of {limit} characters used\"},\"TooltipOverlay\":{\"accessibilityLabel\":\"Tooltip: {label}\"},\"TopBar\":{\"toggleMenuLabel\":\"Toggle menu\",\"SearchField\":{\"clearButtonLabel\":\"Clear\",\"search\":\"Search\"}},\"MediaCard\":{\"popoverButton\":\"Actions\"},\"VideoThumbnail\":{\"playButtonA11yLabel\":{\"default\":\"Play video\",\"defaultWithDuration\":\"Play video of length {duration}\",\"duration\":{\"hours\":{\"other\":{\"only\":\"{hourCount} hours\",\"andMinutes\":\"{hourCount} hours and {minuteCount} minutes\",\"andMinute\":\"{hourCount} hours and {minuteCount} minute\",\"minutesAndSeconds\":\"{hourCount} hours, {minuteCount} minutes, and {secondCount} seconds\",\"minutesAndSecond\":\"{hourCount} hours, {minuteCount} minutes, and {secondCount} second\",\"minuteAndSeconds\":\"{hourCount} hours, {minuteCount} minute, and {secondCount} seconds\",\"minuteAndSecond\":\"{hourCount} hours, {minuteCount} minute, and {secondCount} second\",\"andSeconds\":\"{hourCount} hours and {secondCount} seconds\",\"andSecond\":\"{hourCount} hours and {secondCount} second\"},\"one\":{\"only\":\"{hourCount} hour\",\"andMinutes\":\"{hourCount} hour and {minuteCount} minutes\",\"andMinute\":\"{hourCount} hour and {minuteCount} minute\",\"minutesAndSeconds\":\"{hourCount} hour, {minuteCount} minutes, and {secondCount} seconds\",\"minutesAndSecond\":\"{hourCount} hour, {minuteCount} minutes, and {secondCount} second\",\"minuteAndSeconds\":\"{hourCount} hour, {minuteCount} minute, and {secondCount} seconds\",\"minuteAndSecond\":\"{hourCount} hour, {minuteCount} minute, and {secondCount} second\",\"andSeconds\":\"{hourCount} hour and {secondCount} seconds\",\"andSecond\":\"{hourCount} hour and {secondCount} second\"}},\"minutes\":{\"other\":{\"only\":\"{minuteCount} minutes\",\"andSeconds\":\"{minuteCount} minutes and {secondCount} seconds\",\"andSecond\":\"{minuteCount} minutes and {secondCount} second\"},\"one\":{\"only\":\"{minuteCount} minute\",\"andSeconds\":\"{minuteCount} minute and {secondCount} seconds\",\"andSecond\":\"{minuteCount} minute and {secondCount} second\"}},\"seconds\":{\"other\":\"{secondCount} seconds\",\"one\":\"{secondCount} second\"}}}}}}");
 
 },{}],"kRkat":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -62996,5 +63102,8 @@ parcelHelpers.export(exports, "default", ()=>PlayIcon
 const img = "data:image/svg+xml,%3csvg viewBox='0 0 38 38' xmlns='http://www.w3.org/2000/svg' fill-rule='evenodd' clip-rule='evenodd'%3e%3cpath d='M19 1C9.06 1 1 9.057 1 19c0 9.94 8.057 18 18 18 9.94 0 18-8.057 18-18 0-9.94-8.057-18-18-18z' fill='white'/%3e%3cpath d='M19 1C9.06 1 1 9.057 1 19c0 9.94 8.057 18 18 18 9.94 0 18-8.057 18-18 0-9.94-8.057-18-18-18z' fill='none' stroke='%23b5b5b5'/%3e%3cpath d='M15 11.723c0-.605.7-.942 1.173-.564l10.93 7.215a.72.72 0 010 1.128l-10.93 7.216A.723.723 0 0115 26.153v-14.43z' fill-opacity='.557'/%3e%3c/svg%3e";
 var PlayIcon = img;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"8FsVl"}],"i5ZKj":[function() {},{}]},["aucuq","53L52","6QvhU"], "6QvhU", "parcelRequirec720")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"8FsVl"}],"2HzVe":[function(require,module,exports) {
+module.exports = JSON.parse("{\"Polaris\":{\"Actions\":{\"moreActions\":\"More actions\"},\"Avatar\":{\"label\":\"Avatar\",\"labelWithInitials\":\"Avatar with initials {initials}\"},\"Autocomplete\":{\"spinnerAccessibilityLabel\":\"Loading\",\"ellipsis\":\"{content}…\"},\"Badge\":{\"PROGRESS_LABELS\":{\"incomplete\":\"Incomplete\",\"partiallyComplete\":\"Partially complete\",\"complete\":\"Complete\"},\"STATUS_LABELS\":{\"info\":\"Info\",\"success\":\"Success\",\"warning\":\"Warning\",\"critical\":\"Critical\",\"attention\":\"Attention\",\"new\":\"New\"},\"progressAndStatus\":\"{statusLabel} {progressLabel}\"},\"Button\":{\"spinnerAccessibilityLabel\":\"Loading\",\"connectedDisclosureAccessibilityLabel\":\"Related actions\"},\"Common\":{\"checkbox\":\"checkbox\",\"undo\":\"Undo\",\"cancel\":\"Cancel\",\"newWindowAccessibilityHint\":\"(opens a new window)\",\"clear\":\"Clear\",\"close\":\"Close\",\"submit\":\"Submit\",\"more\":\"More\"},\"ContextualSaveBar\":{\"save\":\"Save\",\"discard\":\"Discard\"},\"DataTable\":{\"sortAccessibilityLabel\":\"sort {direction} by\",\"navAccessibilityLabel\":\"Scroll table {direction} one column\",\"totalsRowHeading\":\"Totals\",\"totalRowHeading\":\"Total\"},\"DatePicker\":{\"previousMonth\":\"Show previous month, {previousMonthName} {showPreviousYear}\",\"nextMonth\":\"Show next month, {nextMonth} {nextYear}\",\"today\":\"Today \",\"start\":\"Start of range\",\"end\":\"End of range\",\"months\":{\"january\":\"January\",\"february\":\"February\",\"march\":\"March\",\"april\":\"April\",\"may\":\"May\",\"june\":\"June\",\"july\":\"July\",\"august\":\"August\",\"september\":\"September\",\"october\":\"October\",\"november\":\"November\",\"december\":\"December\"},\"days\":{\"monday\":\"Monday\",\"tuesday\":\"Tuesday\",\"wednesday\":\"Wednesday\",\"thursday\":\"Thursday\",\"friday\":\"Friday\",\"saturday\":\"Saturday\",\"sunday\":\"Sunday\"},\"daysAbbreviated\":{\"monday\":\"Mo\",\"tuesday\":\"Tu\",\"wednesday\":\"We\",\"thursday\":\"Th\",\"friday\":\"Fr\",\"saturday\":\"Sa\",\"sunday\":\"Su\"}},\"DiscardConfirmationModal\":{\"title\":\"Discard all unsaved changes\",\"message\":\"If you discard changes, you’ll delete any edits you made since you last saved.\",\"primaryAction\":\"Discard changes\",\"secondaryAction\":\"Continue editing\"},\"DropZone\":{\"single\":{\"overlayTextFile\":\"Drop file to upload\",\"overlayTextImage\":\"Drop image to upload\",\"actionTitleFile\":\"Add file\",\"actionTitleImage\":\"Add image\",\"actionHintFile\":\"or drop file to upload\",\"actionHintImage\":\"or drop image to upload\",\"labelFile\":\"Upload file\",\"labelImage\":\"Upload image\"},\"allowMultiple\":{\"overlayTextFile\":\"Drop files to upload\",\"overlayTextImage\":\"Drop images to upload\",\"actionTitleFile\":\"Add files\",\"actionTitleImage\":\"Add images\",\"actionHintFile\":\"or drop files to upload\",\"actionHintImage\":\"or drop images to upload\",\"labelFile\":\"Upload files\",\"labelImage\":\"Upload images\"},\"errorOverlayTextFile\":\"File type is not valid\",\"errorOverlayTextImage\":\"Image type is not valid\"},\"EmptySearchResult\":{\"altText\":\"Empty search results\"},\"Frame\":{\"skipToContent\":\"Skip to content\",\"navigationLabel\":\"Navigation\",\"Navigation\":{\"closeMobileNavigationLabel\":\"Close navigation\"}},\"ActionMenu\":{\"RollupActions\":{\"rollupButton\":\"Actions\"}},\"Filters\":{\"moreFilters\":\"More filters\",\"moreFiltersWithCount\":\"More filters ({count})\",\"filter\":\"Filter {resourceName}\",\"noFiltersApplied\":\"No filters applied\",\"cancel\":\"Cancel\",\"done\":\"Done\",\"clearAllFilters\":\"Clear all filters\",\"clear\":\"Clear\",\"clearLabel\":\"Clear {filterName}\"},\"IndexProvider\":{\"defaultItemSingular\":\"Item\",\"defaultItemPlural\":\"Items\",\"allItemsSelected\":\"All {itemsLength}+ {resourceNamePlural} are selected.\",\"selected\":\"{selectedItemsCount} selected\",\"a11yCheckboxDeselectAllSingle\":\"Deselect {resourceNameSingular}\",\"a11yCheckboxSelectAllSingle\":\"Select {resourceNameSingular}\",\"a11yCheckboxDeselectAllMultiple\":\"Deselect all {itemsLength} {resourceNamePlural}\",\"a11yCheckboxSelectAllMultiple\":\"Select all {itemsLength} {resourceNamePlural}\"},\"IndexTable\":{\"emptySearchTitle\":\"No {resourceNamePlural} found\",\"emptySearchDescription\":\"Try changing the filters or search term\",\"onboardingBadgeText\":\"New\",\"resourceLoadingAccessibilityLabel\":\"Loading {resourceNamePlural}…\",\"selectAllLabel\":\"Select all {resourceNamePlural}\",\"selected\":\"{selectedItemsCount} selected\",\"undo\":\"Undo\",\"selectAllItems\":\"Select all {itemsLength}+ {resourceNamePlural}\",\"selectItem\":\"Select {resourceName}\",\"selectButtonText\":\"Select\"},\"Loading\":{\"label\":\"Page loading bar\"},\"Modal\":{\"iFrameTitle\":\"body markup\",\"modalWarning\":\"These required properties are missing from Modal: {missingProps}\"},\"Pagination\":{\"previous\":\"Previous\",\"next\":\"Next\",\"pagination\":\"Pagination\"},\"ProgressBar\":{\"negativeWarningMessage\":\"Values passed to the progress prop shouldn’t be negative. Resetting {progress} to 0.\",\"exceedWarningMessage\":\"Values passed to the progress prop shouldn’t exceed 100. Setting {progress} to 100.\"},\"ResourceList\":{\"sortingLabel\":\"Sort by\",\"defaultItemSingular\":\"item\",\"defaultItemPlural\":\"items\",\"showing\":\"Showing {itemsCount} {resource}\",\"showingTotalCount\":\"Showing {itemsCount} of {totalItemsCount} {resource}\",\"loading\":\"Loading {resource}\",\"selected\":\"{selectedItemsCount} selected\",\"allItemsSelected\":\"All {itemsLength}+ {resourceNamePlural} in your store are selected.\",\"allFilteredItemsSelected\":\"All {itemsLength}+ {resourceNamePlural} in this filter are selected.\",\"selectAllItems\":\"Select all {itemsLength}+ {resourceNamePlural} in your store\",\"selectAllFilteredItems\":\"Select all {itemsLength}+ {resourceNamePlural} in this filter\",\"emptySearchResultTitle\":\"No {resourceNamePlural} found\",\"emptySearchResultDescription\":\"Try changing the filters or search term\",\"selectButtonText\":\"Select\",\"a11yCheckboxDeselectAllSingle\":\"Deselect {resourceNameSingular}\",\"a11yCheckboxSelectAllSingle\":\"Select {resourceNameSingular}\",\"a11yCheckboxDeselectAllMultiple\":\"Deselect all {itemsLength} {resourceNamePlural}\",\"a11yCheckboxSelectAllMultiple\":\"Select all {itemsLength} {resourceNamePlural}\",\"ariaLiveSingular\":\"{itemsLength} item\",\"ariaLivePlural\":\"{itemsLength} items\",\"Item\":{\"actionsDropdownLabel\":\"Actions for {accessibilityLabel}\",\"actionsDropdown\":\"Actions dropdown\",\"viewItem\":\"View details for {itemName}\"},\"BulkActions\":{\"actionsActivatorLabel\":\"Actions\",\"moreActionsActivatorLabel\":\"More actions\",\"warningMessage\":\"To provide a better user experience. There should only be a maximum of {maxPromotedActions} promoted actions.\"},\"FilterCreator\":{\"filterButtonLabel\":\"Filter\",\"selectFilterKeyPlaceholder\":\"Select a filter…\",\"addFilterButtonLabel\":\"Add filter\",\"showAllWhere\":\"Show all {resourceNamePlural} where:\"},\"FilterControl\":{\"textFieldLabel\":\"Search {resourceNamePlural}\"},\"FilterValueSelector\":{\"selectFilterValuePlaceholder\":\"Select a filter…\"},\"DateSelector\":{\"dateFilterLabel\":\"Select a value\",\"dateValueLabel\":\"Date\",\"dateValueError\":\"Match YYYY-MM-DD format\",\"dateValuePlaceholder\":\"YYYY-MM-DD\",\"SelectOptions\":{\"PastWeek\":\"in the last week\",\"PastMonth\":\"in the last month\",\"PastQuarter\":\"in the last 3 months\",\"PastYear\":\"in the last year\",\"ComingWeek\":\"next week\",\"ComingMonth\":\"next month\",\"ComingQuarter\":\"in the next 3 months\",\"ComingYear\":\"in the next year\",\"OnOrBefore\":\"on or before\",\"OnOrAfter\":\"on or after\"},\"FilterLabelForValue\":{\"past_week\":\"in the last week\",\"past_month\":\"in the last month\",\"past_quarter\":\"in the last 3 months\",\"past_year\":\"in the last year\",\"coming_week\":\"next week\",\"coming_month\":\"next month\",\"coming_quarter\":\"in the next 3 months\",\"coming_year\":\"in the next year\",\"on_or_before\":\"before {date}\",\"on_or_after\":\"after {date}\"}}},\"SkeletonPage\":{\"loadingLabel\":\"Page loading\"},\"Tabs\":{\"toggleTabsLabel\":\"More tabs\"},\"Tag\":{\"ariaLabel\":\"Remove {children}\"},\"TextField\":{\"characterCount\":\"{count} characters\",\"characterCountWithMaxLength\":\"{count} of {limit} characters used\"},\"TooltipOverlay\":{\"accessibilityLabel\":\"Tooltip: {label}\"},\"TopBar\":{\"toggleMenuLabel\":\"Toggle menu\",\"SearchField\":{\"clearButtonLabel\":\"Clear\",\"search\":\"Search\"}},\"MediaCard\":{\"popoverButton\":\"Actions\"},\"VideoThumbnail\":{\"playButtonA11yLabel\":{\"default\":\"Play video\",\"defaultWithDuration\":\"Play video of length {duration}\",\"duration\":{\"hours\":{\"other\":{\"only\":\"{hourCount} hours\",\"andMinutes\":\"{hourCount} hours and {minuteCount} minutes\",\"andMinute\":\"{hourCount} hours and {minuteCount} minute\",\"minutesAndSeconds\":\"{hourCount} hours, {minuteCount} minutes, and {secondCount} seconds\",\"minutesAndSecond\":\"{hourCount} hours, {minuteCount} minutes, and {secondCount} second\",\"minuteAndSeconds\":\"{hourCount} hours, {minuteCount} minute, and {secondCount} seconds\",\"minuteAndSecond\":\"{hourCount} hours, {minuteCount} minute, and {secondCount} second\",\"andSeconds\":\"{hourCount} hours and {secondCount} seconds\",\"andSecond\":\"{hourCount} hours and {secondCount} second\"},\"one\":{\"only\":\"{hourCount} hour\",\"andMinutes\":\"{hourCount} hour and {minuteCount} minutes\",\"andMinute\":\"{hourCount} hour and {minuteCount} minute\",\"minutesAndSeconds\":\"{hourCount} hour, {minuteCount} minutes, and {secondCount} seconds\",\"minutesAndSecond\":\"{hourCount} hour, {minuteCount} minutes, and {secondCount} second\",\"minuteAndSeconds\":\"{hourCount} hour, {minuteCount} minute, and {secondCount} seconds\",\"minuteAndSecond\":\"{hourCount} hour, {minuteCount} minute, and {secondCount} second\",\"andSeconds\":\"{hourCount} hour and {secondCount} seconds\",\"andSecond\":\"{hourCount} hour and {secondCount} second\"}},\"minutes\":{\"other\":{\"only\":\"{minuteCount} minutes\",\"andSeconds\":\"{minuteCount} minutes and {secondCount} seconds\",\"andSecond\":\"{minuteCount} minutes and {secondCount} second\"},\"one\":{\"only\":\"{minuteCount} minute\",\"andSeconds\":\"{minuteCount} minute and {secondCount} seconds\",\"andSecond\":\"{minuteCount} minute and {secondCount} second\"}},\"seconds\":{\"other\":\"{secondCount} seconds\",\"one\":\"{secondCount} second\"}}}}}}");
+
+},{}],"i5ZKj":[function() {},{}]},["aucuq","53L52","6QvhU"], "6QvhU", "parcelRequirec720")
 

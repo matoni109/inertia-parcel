@@ -20,7 +20,7 @@
 
 #### JS Bundling by [Parcel](https://parceljs.org/)
 
-  - JS and CSS compiling in RUST, hot reloading and file watching
+  - JS and CSS compiling in RUST, hot reloading and file watching 30 % faster than Webpacker
   
 - Front-end components by Shopify [Polaris](https://polaris.shopify.com/components/get-started)
 

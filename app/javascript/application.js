@@ -2,6 +2,7 @@ import { render } from "react-dom";
 import { createInertiaApp } from "@inertiajs/inertia-react";
 
 import * as pages from ".././Pages/*";
+import "@shopify/polaris/build/esm/styles.css";
 
 createInertiaApp({
   resolve: (name) => pages[`${name}.js`],

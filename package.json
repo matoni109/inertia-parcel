@@ -2,7 +2,9 @@
   "name": "app",
   "private": "true",
   "scripts": {
-    "watch:css": "tailwindcss -i app/assets/stylesheets/application.css -o app/assets/stylesheets/tailwind.css  -w",
+    "watch-css": "parcel watch app/assets/stylesheets/application.css --dist-dir app/assets/builds ",
+    "build-css": "parcel build app/assets/stylesheets/application.css --dist-dir app/assets/builds ",
+    "production-css": "NODE_ENV=production parcel build resources/css/style.css --dist-dir public/css --public-url /css --no-content-hash --no-source-maps",
     "build": "parcel app/javascript/application.js --dist-dir app/assets/builds --port 1234 --hmr-port 1235 --no-source-maps"
   },
   "dependencies": {
@@ -14,12 +16,14 @@
   },
   "devDependencies": {
     "@parcel/resolver-glob": "^2.0.0",
-    "parcel": "^2.0.1",
-    "prettier": "2.4.1",
     "@tailwindcss/forms": "^0.4.0-alpha.1",
     "@tailwindcss/typography": "^0.5.0-alpha.2",
-    "autoprefixer": "^10.3.7",
-    "postcss": "^8.3.9",
+    "autoprefixer": "^10.4.0",
+    "cssnano": "^5.0.11",
+    "parcel": "^2.0.1",
+    "postcss": "^8.3.11",
+    "postcss-import": "^14.0.2",
+    "prettier": "2.4.1",
     "tailwindcss": "^3.0.0-alpha.2"
   }
 }

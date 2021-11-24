@@ -3,6 +3,8 @@ import { createInertiaApp } from "@inertiajs/inertia-react";
 
 import * as pages from ".././Pages/*";
 import "@shopify/polaris/build/esm/styles.css";
+// bring in css and scss
+import "./application.css";
 
 createInertiaApp({
   resolve: (name) => pages[`${name}.js`],

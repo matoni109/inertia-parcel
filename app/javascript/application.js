@@ -3,8 +3,12 @@ import { createInertiaApp } from "@inertiajs/inertia-react";
 
 import * as pages from ".././Pages/*";
 
-import "../assets/stylesheets/application.css";
-// import "tailwindcss/tailwind.css";
+// rails s
+// yarn build
+// yarn build-css
+if (module.hot) {
+  module.hot.accept();
+}
 
 createInertiaApp({
   resolve: (name) => pages[`${name}.js`],

@@ -3,6 +3,7 @@ import React from "react";
 const InertiaTailwind = () => {
   return (
     <>
+      <h1 className="pink-me">PINK</h1>
       <div className="max-w-sm rounded overflow-hidden shadow-lg">
         <img
           className="w-full"
@@ -32,6 +33,7 @@ const InertiaTailwind = () => {
       <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
         Button
       </button>
+      <select className="form-select px-4 py-3 rounded-full">Yay</select>
     </>
   );
 };

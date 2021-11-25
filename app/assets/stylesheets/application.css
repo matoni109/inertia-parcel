@@ -1,1 +1,9 @@
 @import "./tailwind.css";
+
+h1 {
+  color: pink;
+}
+
+.pink-me {
+  color: pink;
+}

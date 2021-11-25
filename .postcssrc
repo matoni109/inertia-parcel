@@ -2,7 +2,9 @@
   "plugins": {
     "postcss-import": {},
     "tailwindcss": {},
-    "autoprefixer": {},
+    "autoprefixer": {
+      "grid": true
+    },
     "cssnano": {}
   }
 }

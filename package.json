@@ -2,9 +2,7 @@
   "name": "app",
   "private": "true",
   "scripts": {
-    "dev:css": "tailwindcss -i app/assets/stylesheets/tailwind.css -o app/assets/stylesheets/application.css  --jit --content './app/javascript/**/*.js' --watch",
-    "build:css": "tailwindcss -o app/assets/stylesheets/application.css --minify",
-    "watch-css": "parcel watch app/assets/stylesheets/application.css --port 1236 --hmr-port 1237 --dist-dir app/assets/builds --public-url /assets",
+    "watch-css": "parcel app/assets/stylesheets/application.css --port 1236 --hmr-port 1237 --dist-dir app/assets/builds --public-url /assets",
     "build-css": "parcel build app/assets/stylesheets/application.css  --dist-dir app/assets/builds --public-url /assets",
     "production-css": "NODE_ENV=production parcel build resources/css/style.css --dist-dir public/css --public-url /css --no-content-hash --no-source-maps",
     "build": "parcel app/javascript/application.js --dist-dir app/assets/builds --port 1234 --hmr-port 1235 --no-source-maps"

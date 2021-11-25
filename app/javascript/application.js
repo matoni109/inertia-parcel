@@ -3,8 +3,7 @@ import { createInertiaApp } from "@inertiajs/inertia-react";
 
 import * as pages from ".././Pages/*";
 
-//
-// import "../assets/stylesheets/application.css";
+import "../assets/stylesheets/application.css";
 // import "tailwindcss/tailwind.css";
 
 createInertiaApp({

@@ -2,8 +2,10 @@
   "name": "app",
   "private": "true",
   "scripts": {
-    "watch-css": "parcel watch app/assets/stylesheets/application.css --dist-dir app/assets/builds ",
-    "build-css": "parcel build app/assets/stylesheets/application.css --dist-dir app/assets/builds ",
+    "dev:css": "tailwindcss -i app/assets/stylesheets/tailwind.css -o app/assets/stylesheets/application.css  --jit --content './app/javascript/**/*.js' --watch",
+    "build:css": "tailwindcss -o app/assets/stylesheets/application.css --minify",
+    "watch-css": "parcel watch app/assets/stylesheets/application.css --port 1236 --hmr-port 1237 --dist-dir app/assets/builds --public-url /assets",
+    "build-css": "parcel build app/assets/stylesheets/application.css  --dist-dir app/assets/builds --public-url /assets",
     "production-css": "NODE_ENV=production parcel build resources/css/style.css --dist-dir public/css --public-url /css --no-content-hash --no-source-maps",
     "build": "parcel app/javascript/application.js --dist-dir app/assets/builds --port 1234 --hmr-port 1235 --no-source-maps"
   },
@@ -12,9 +14,6 @@
     "@inertiajs/inertia-react": "^0.7.1",
     "@shopify/polaris": "^7.4.0",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {
     "@parcel/resolver-glob": "^2.0.0",
     "@tailwindcss/forms": "^0.4.0-alpha.1",
     "@tailwindcss/typography": "^0.5.0-alpha.2",
@@ -24,6 +23,8 @@
     "postcss": "^8.3.11",
     "postcss-import": "^14.0.2",
     "prettier": "2.4.1",
-    "tailwindcss": "^3.0.0-alpha.2"
-  }
+    "tailwindcss": "^3.0.0-alpha.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {}
 }

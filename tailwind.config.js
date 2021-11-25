@@ -1,7 +1,11 @@
 module.exports = {
   mode: "jit",
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
+  content: [
+    "./**/*.html.erb",
+    "./app/helpers/**/*.rb",
+    "./app/javascript/**/*.js",
+    "./app/Pages/*.js",
+  ],
   theme: {},
   variants: {},
   plugins: [],

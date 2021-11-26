@@ -12,6 +12,7 @@ if (module.hot) {
   // console.log(module.hot);
 }
 
+
 createInertiaApp({
   resolve: (name) => pages[`${name}.js`],
   setup({ el, App, props }) {

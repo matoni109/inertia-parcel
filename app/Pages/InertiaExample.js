@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import CheckboxExample from "../javascript/Components/Checkbox";
+
 import enTranslations from "@shopify/polaris/locales/en.json";
 import {
   AppProvider,
@@ -29,8 +29,6 @@ const InertiaExample = () => {
           <Button onClick={() => alert("Button clicked!")}>
             Example button
           </Button>
-
-          <CheckboxExample />
         </Card>
 
         <Card sectioned>

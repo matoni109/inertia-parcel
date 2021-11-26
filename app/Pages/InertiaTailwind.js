@@ -1,39 +1,31 @@
 import React from "react";
+import { AppProvider } from "@shopify/polaris";
+import SideNavigation from "../javascript/Components/SideNavigation";
+import TopNavBar from "../javascript/Components/TopNavBar";
+import ContentTabs from "../javascript/Components/ConentTabs";
 
 const InertiaTailwind = () => {
   return (
     <>
-      <h1 className="pink-me">PINK</h1>
-      <div className="max-w-sm rounded overflow-hidden shadow-lg">
-        <img
-          className="w-full"
-          src="https://imagecurl.com/images/76603756998636105555_thumb.png"
-          alt="Sunset in the mountains"
-        />
-        <div className="px-6 py-4">
-          <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
-          <p className="text-gray-700 text-base">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            Voluptatibus quia, nulla! Maiores et perferendis eaque,
-            exercitationem praesentium nihil.
-          </p>
+      <AppProvider>
+        <TopNavBar />
+        <div className="flex flex-no-wrap">
+          <div className="">
+            <div className="">
+              <SideNavigation />
+            </div>
+          </div>
+
+          {/* <!-- Sidebar ends --> */}
+
+          <div className="container mx-auto py-10 h-64 md:w-4/5 w-11/12 px-6">
+            {/* <!-- Remove className [ border-dashed border-2 border-gray-300 ] to remove dotted border --> */}
+            <div className="w-full h-full rounded border-dashed border-2 border-gray-300">
+              <ContentTabs />
+            </div>
+          </div>
         </div>
-        <div className="px-6 pt-4 pb-2">
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #photography
-          </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #travel
-          </span>
-          <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-            #winter
-          </span>
-        </div>
-      </div>
-      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
-        Button
-      </button>
-      <select className="form-select px-4 py-3 rounded-full">Yay</select>
+      </AppProvider>
     </>
   );
 };

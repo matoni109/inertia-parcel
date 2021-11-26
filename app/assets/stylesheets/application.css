@@ -1,9 +1,10 @@
 @import "./tailwind.css";
+@import "@shopify/polaris/build/esm/styles.css";
 
 h1 {
   color: pink;
 }
 
 .pink-me {
-  color: pink;
+  color: blue;
 }

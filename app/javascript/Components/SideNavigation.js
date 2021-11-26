@@ -1,10 +1,14 @@
-import React, { useState, useCallback } from "react";
-import { Navigation } from "@shopify/polaris";
+import React from "react";
+import { Icon, Navigation } from "@shopify/polaris";
 import {
+  CirclePlusOutlineMinor,
+  CustomersMajor,
   HomeMajor,
+  MarketingMajor,
   OnlineStoreMajor,
   OrdersMajor,
   ProductsMajor,
+  ViewMinor,
 } from "@shopify/polaris-icons";
 
 const SideNavigation = () => {
@@ -13,34 +17,36 @@ const SideNavigation = () => {
       <Navigation.Section
         items={[
           {
-            url: "/",
-            label: "Home",
+            url: "/path/to/place",
+            label: "Hasbro",
             icon: HomeMajor,
           },
           {
             url: "/path/to/place",
             label: "Orders",
-            icon: OrdersMajor,
+            icon: HomeMajor,
             badge: "15",
           },
           {
-            url: "/admin/products",
+            url: "/path/to/place",
             label: "Products",
-            icon: ProductsMajor,
-            selected: true,
-            subNavigationItems: [
-              {
-                url: "/admin/products",
-                disabled: false,
-                selected: true,
-                label: "All products",
-              },
-              {
-                url: "/admin/products/inventory",
-                disabled: false,
-                label: "Inventory",
-              },
-            ],
+            icon: HomeMajor,
+          },
+          {
+            url: "/path/to/place",
+            label: "Hasbro",
+            icon: HomeMajor,
+          },
+          {
+            url: "/path/to/place",
+            label: "Orders",
+            icon: HomeMajor,
+            badge: "15",
+          },
+          {
+            url: "/path/to/place",
+            label: "Products",
+            icon: HomeMajor,
           },
         ]}
       />

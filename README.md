@@ -4,7 +4,7 @@
   
 
 ## Working example of Shopify Polaris React Components.
-![image](https://user-images.githubusercontent.com/68096885/142751116-d9fab545-6b14-4185-a82e-073e92765c56.png)
+<img width="1905" alt="Screen Shot 2021-11-26 at 3 21 27 pm" src="https://user-images.githubusercontent.com/68096885/143526350-829b6ce7-3ea0-4f93-a1a4-ab15afba367d.png">
 
 #### [Rails 7 Alpha 2](https://weblog.rubyonrails.org/2021/9/27/this-week-in-rails-autumn-is-here-and-so-is-rails-7-alpha-2/)
 

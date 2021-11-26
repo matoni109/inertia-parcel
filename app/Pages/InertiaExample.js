@@ -27,7 +27,7 @@ const InertiaExample = () => {
       <Page title="Polaris Components in React">
         <Card sectioned>
           <Button onClick={() => alert("Button clicked!")}>
-            Example button
+            Example buttons
           </Button>
         </Card>
 

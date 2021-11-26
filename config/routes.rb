@@ -3,6 +3,6 @@ Rails.application.routes.draw do
 
   # Almost every application defines a route for the root path ("/") at the top of this file.
   # root "articles#index"  inertia 'about' => 'AboutComponent'
-  root to: 'inertia-example', to: 'inertia_example#index'
-  get 'inertia-example', to: 'inertia_example#tailwind', as: 'tailwind'
+  root to: 'inertia-example', to: 'inertia_example#tailwind'
+  get 'inertia-example', to: 'inertia_example#index', as: 'example'
 end

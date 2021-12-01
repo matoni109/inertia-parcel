@@ -2,9 +2,10 @@
 @import "@shopify/polaris/build/esm/styles.css";
 
 h1 {
-  color: pink;
+  color: red;
+  text-shadow: purple;
 }
 
 .pink-me {
-  color: blue;
+  color: orange;
 }

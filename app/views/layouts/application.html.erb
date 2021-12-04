@@ -6,12 +6,12 @@
     <%= csp_meta_tag %>
     <%#= javascript_importmap_tags %>
     <%#= <script src="https://cdn-tailwindcss.vercel.app/"></script> %>
-    <%# <script type="module" src="/assets/application.css"></script> %>
-    <%= stylesheet_link_tag "application", defer: true  %>
-    <%# <script type="module" src="/assets/application.js"></script> %>
-    <%= javascript_include_tag "application", defer: true %>
-  </head>
-  <body>
-    <%= yield %>
-  </body>
+    <link rel="stylesheet" href="/assets/application.css"></link>
+  <%#= stylesheet_link_tag "application", defer: true  %>
+  <script type="module" src="/assets/application.js"></script>
+  <%#= javascript_include_tag "application", defer: true %>
+</head>
+<body>
+  <%= yield %>
+</body>
 </html>

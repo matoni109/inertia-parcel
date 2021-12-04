@@ -1,8 +1,9 @@
 {
-  "name": "app",
+  "name": "inertia-parcel-polaris-test-app",
   "private": "true",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "watch-css": "parcel watch app/assets/stylesheets/application.css --port 1236 --hmr-port 1237 --dist-dir app/assets/builds",
+    "watch-css": "parcel app/assets/stylesheets/application.css --dist-dir app/assets/builds",
     "build-css": "parcel build app/assets/stylesheets/application.css  --dist-dir app/assets/builds --public-url /assets",
     "production-css": "NODE_ENV=production parcel build resources/css/style.css --dist-dir public/css --public-url /css --no-content-hash --no-source-maps",
     "build": "parcel app/javascript/application.js --dist-dir app/assets/builds --port 1234 --hmr-port 1235 --no-source-maps"

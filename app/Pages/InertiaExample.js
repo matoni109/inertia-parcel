@@ -28,7 +28,7 @@ const InertiaExample = () => {
         <div className="mt-5 flex items-center">
           <img src="https://picsum.photos/60/60" className="rounded-full" />
           <div className="ml-3">
-            <h3 className="font-semibold"> Lana Del Rey 6</h3>
+            <h3 className="font-semibold"> Lana Del Rey T12</h3>
             <p className="text-gray-500"> Singer/songwriter </p>
           </div>
         </div>

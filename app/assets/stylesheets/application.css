@@ -2,7 +2,7 @@
 @import "@shopify/polaris/build/esm/styles.css";
 
 h1 {
-  color: red;
+  color: orange;
   text-shadow: purple;
 }
 

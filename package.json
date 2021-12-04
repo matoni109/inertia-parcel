@@ -1,8 +1,9 @@
 {
-  "name": "app",
+  "name": "inertia-parcel-polaris-test-app",
   "private": "true",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "watch-css": "parcel watch app/assets/stylesheets/application.css --port 1236 --hmr-port 1237 --dist-dir app/assets/builds --public-url /assets",
+    "watch-css": "parcel app/assets/stylesheets/application.css --dist-dir app/assets/builds",
     "build-css": "parcel build app/assets/stylesheets/application.css  --dist-dir app/assets/builds --public-url /assets",
     "production-css": "NODE_ENV=production parcel build resources/css/style.css --dist-dir public/css --public-url /css --no-content-hash --no-source-maps",
     "build": "parcel app/javascript/application.js --dist-dir app/assets/builds --port 1234 --hmr-port 1235 --no-source-maps"
@@ -10,19 +11,20 @@
   "dependencies": {
     "@inertiajs/inertia": "^0.10.1",
     "@inertiajs/inertia-react": "^0.7.1",
-    "@shopify/polaris": "^7.4.0",
     "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
     "@parcel/resolver-glob": "^2.0.0",
     "@tailwindcss/forms": "^0.4.0-alpha.1",
     "@tailwindcss/typography": "^0.5.0-alpha.2",
     "autoprefixer": "^10.4.0",
     "cssnano": "^5.0.11",
-    "parcel": "^2.0.1",
+    "parcel": "^2.0.0-nightly.932",
     "postcss": "^8.3.11",
     "postcss-import": "^14.0.2",
+    "@shopify/polaris": "^7.4.0",
     "prettier": "2.4.1",
-    "tailwindcss": "^3.0.0-alpha.2",
-    "react-dom": "^17.0.2"
-  },
-  "devDependencies": {}
+    "tailwindcss": "^3.0.0-alpha.2"
+  }
 }

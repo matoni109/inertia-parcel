@@ -5,13 +5,12 @@ import * as pages from ".././Pages/*";
 import "../assets/stylesheets/application.css";
 // rails s
 // yarn build
-// yarn build-css
+// don't need => yarn build-css
 
 if (module.hot) {
   module.hot.accept();
   // console.log(module.hot);
 }
-
 
 createInertiaApp({
   resolve: (name) => pages[`${name}.js`],
